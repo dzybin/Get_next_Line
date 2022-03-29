@@ -6,7 +6,7 @@
 /*   By: dzybin <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/07 11:40:53 by dzybin            #+#    #+#             */
-/*   Updated: 2022/02/08 16:37:30 by dzybin           ###   ########.fr       */
+/*   Updated: 2022/02/09 13:04:02 by dzybin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	ft_gnl(int fd, char **line)
 	int	nb_read_bytes;
 	char	*ptr_to_n;
 	int	flag;
-	char	*reminder;
+	static char	*reminder;
 
 	flag = 1;
 	if(reminder)
